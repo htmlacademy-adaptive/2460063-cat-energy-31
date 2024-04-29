@@ -5,13 +5,27 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
   <div class="header-wrapper">
     <header class="header">
       <a class="logo-energy-link" href="index.html">
-        <img class="logo-energy-link-img" src="#" alt="Логотип сайта">
+        <picture>
+          <source media="(mins-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/general/logo-img_desktop.svg">
+          <source media="(min-width: 768px)" width="33" height="38" type="image/svg+xml" srcset="images/general/logo-img.svg">
+          <img class="logo-energy-link-img" src="images/general/logo-img.svg" width="33" height="38" alt="Логотип сайта">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/general/logo-text_desktop.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/general/logo-text_tablet.svg">
+          <img class="logo-energy-link-text" src="images/general/logo-text_mobile.svg" width="101" height="18" alt="Логотип сайта">
+        </picture>
       </a>
       <nav class="header-nav">
         <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -36,12 +50,16 @@
     </header>
   </div>
   <main class="main-container">
-    <h1 class="title">Функциональное питание для котов</h1>
     <section class="programs">
       <div class="programs__wrapper">
+        <h1 class="title">Функциональное питание для котов</h1>
         <p class="programs__slogan">Занялся собой? Займись котом!</p>
         <a class="programs__button button-link-programs" href="#">подобрать программу</a>
-        <img class="programs__image-product" src="#" alt="Продукция кэт энерджи">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/index/desktop/product_desktop@1x.png 1x, images/index/desktop/product_desktop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/index/tablet/product_tablet@1x.png 1x, images/index/tablet/product_tablet@2x.png 2x">
+          <img class="programs__image-product" src="images/index/mobile/product_mobile@1x.png" srcset="images/index/mobile/product_mobile@2x.png 2x" width="280" height="270" alt="Продукция кэт энерджи">
+        </picture>
       </div>
     </section>
     <section class="advantages">
@@ -83,24 +101,31 @@
       <div class="examples__wrapper">
         <h2 class="subtitle">Живой пример</h2>
         <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="examples__description examples">
-          <div class="examples__table table-examples">
-            <ul class="table-examples__list">
-              <li class="table-examples__item">
-                <p class="table-examples__item-weight">5 КГ</p>
-                <p class="table-examples__item-text">снижение веса</p>
+        <div class="examples__description example">
+          <div class="example__table table-example">
+            <ul class="table-example__list">
+              <li class="table-example__item">
+                <p class="table-example__item-value">5 КГ</p>
+                <p class="table-example__item-text">снижение веса</p>
               </li>
-              <li class="table-examples__item">
-                <p class="table-examples__item-days">60 ДНЕЙ</p>
-                <p class="table-examples__item-text">затрачено времени</p>
+              <li class="table-example__item">
+                <p class="table-example__item-days">60 ДНЕЙ</p>
+                <p class="table-example__item-text">затрачено времени</p>
               </li>
             </ul>
           </div>
-          <div class="examples__price">
-            <span class="examples__price-text">Затраты на питание:</span>
-            <span class="examples__price-sum">15 000 РУБ.</span>
+          <div class="example__price">
+            <span class="example__price-text">Затраты на питание:</span>
+            <span class="example__price-sum">15 000 РУБ.</span>
           </div>
-          <img class="examples__image" src="#" alt="Кот до и после прохождения программы">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/index/tablet/fat-cat_tablet@1x.png 1x, images/index/tablet/fat-cat_tablet@2x.png 2x">
+            <img class="examples__image-before" src="images/index/mobile/fat-cat_mobile@1x.png" srcset="images/index/mobile/fat-cat_mobile@2x.png 2x" width="280" height="256" alt="Кот до прохождения программы">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/index/tablet/thin-cat_tablet@1x.png 1x, images/index/tablet/thin-cat_tablet@2x.png 2x">
+            <img class="examples__image-after" src="images/index/mobile/thin-cat_mobile@1x.png" srcset="images/index/mobile/thin-cat_mobile@2x.png 2x" width="280" height="256" alt="Кот после прохождения программы">
+          </picture>
         </div>
       </div>
     </section>
@@ -109,15 +134,23 @@
     <div class="footer__wrapper">
       <div class="footer__maps maps">
         <aside class="maps__aside">
-          <p class="maps__aside-text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="maps__aside-invite">приглашаем к сотрудничеству дилеров!</p>
           <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8</p>
           <p class="maps__aside-text">Санкт-Петербург</p>
         </aside>
-        <img class="maps__image" src="#" alt="Расположение офиса на карте">
+        <picture>
+          <source type="image/jpeg" media="(min-width: 1440px)" width="1440" height="400" srcset="images/index/desktop/map_desktop@1x.jpg 1x, images/index/desktop/map_desktop@2x.jpg 2x">
+          <source type="image/jpeg" media="(min-width: 768px)" width="768" height="400" srcset="images/index/tablet/map_tablet@1x.jpg 1x, images/index/tablet/map_tablet@2x.jpg 2x">
+          <img class="maps__image" src="images/index/mobile/map_mobile@1x.jpg" srcset="images/index/mobile/map_mobile@2x.jpg 2x" width="320" height="362" alt="Расположение офиса на карте">
+        </picture>
       </div>
       <div class="footer__logo">
         <a class="logo-energy-link" href="index.html">
-          <img class="logo-energy-link-image" src="#" alt="Логотип сайта">
+          <picture>
+            <source media="(min-width: 1440px)" width="128" height="24" type="image/svg+xml" srcset="images/general/logo-text_desktop.svg">
+            <source media="(min-width: 768px)" width="128" height="24" type="image/svg+xml" srcset="images/general/logo-text_tablet.svg">
+            <img class="logo-energy-link-text" src="images/general/logo-text_mobile.svg" srcset="#" width="320" height="362" alt="Логотип сайта">
+          </picture>
         </a>
       </div>
       <div class="footer__social social">
@@ -135,7 +168,7 @@
       </div>
       <div class="footer__logo-academy">
         <a class="footer__logo-academy-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
-          <img class="footer__logo-academy-img" src="#" alt="логотип HTML-Academy">
+          <img class="footer__logo-academy-img" src="#" width="1" height="1" alt="логотип HTML-Academy">
         </a>
       </div>
     </div>
