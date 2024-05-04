@@ -1,0 +1,22 @@
+.maps__aside-invite {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-black;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.maps__aside-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

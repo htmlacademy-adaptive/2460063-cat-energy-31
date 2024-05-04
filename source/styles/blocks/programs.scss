@@ -1,0 +1,32 @@
+.programs {
+  background-color: $green-transparent;
+}
+
+.programs__slogan {
+  font-family: $secondary-font;
+  line-height: 14px;
+  font-size: 14px;
+  color: $color_white;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    color: $color_black;
+    line-height: 20px;
+    font-size: 20px;
+  }
+}
+
+.programs__button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color_white;
+  text-align: center;
+  background-color: $green;
+
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

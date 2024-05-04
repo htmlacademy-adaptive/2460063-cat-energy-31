@@ -1,0 +1,12 @@
+.example__price-text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color_black;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

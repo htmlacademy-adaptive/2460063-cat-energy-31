@@ -1,0 +1,11 @@
+.button-link-catalog {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color_black;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

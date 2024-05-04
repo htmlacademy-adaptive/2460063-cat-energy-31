@@ -1,0 +1,39 @@
+.catalog__button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color_white;
+  background-color: $green;
+}
+
+.catalog__item-link-more {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-black;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.catalog__item-excerpt {
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.catalog__button--more {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey;
+  text-align: center;
+  background-color: $dark-white;
+}

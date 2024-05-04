@@ -1,0 +1,19 @@
+.catalog-card {
+  background-color: $color_white;
+
+  @media (min-width: 768px) {
+    background-color: $dark-white;
+  }
+}
+
+.catalog-card__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-34;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

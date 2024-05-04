@@ -1,0 +1,41 @@
+.box-additional__list-product {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black-34;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.box-additional__list-volume {
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-grey;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.box-additional__list-price {
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-grey;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.box-additional__button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color_white;
+  text-align: center;
+}
