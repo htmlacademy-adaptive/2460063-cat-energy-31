@@ -2,3 +2,31 @@
   display: flex;
   background-color: $dark-white;
 }
+
+.footer__logo-academy-text {
+  text-decoration: none;
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__logo-academy-text:active {
+  opacity: 30%;
+}
+
+.footer__logo-academy-icon {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#htmlacademy");
+  background-color: $dirty-gray;
+  width: 27px;
+  height: 34px;
+}
+
+.footer__logo-academy-icon:hover {
+  background-color: $green;
+}
+
+.footer__logo-academy-icon:active {
+  background-color: $green;
+  opacity: 30%;
+}

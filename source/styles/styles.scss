@@ -7,14 +7,14 @@
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/header-wrapper.scss";
 @import "./blocks/header.scss";
-@import "./blocks/logo-energy-link.scss";
+@import "./blocks/logo-energy.scss";
 @import "./blocks/header-nav.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/title.scss";
-@import "./blocks/button-link-programs.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/button-link-catalog.scss";
 @import "./blocks/benefits.scss";
@@ -26,11 +26,9 @@
 @import "./blocks/maps.scss";
 @import "./blocks/social.scss";
 @import "./blocks/catalog.scss";
-@import "./blocks/catalog-list.scss";
 @import "./blocks/catalog-card.scss";
 @import "./blocks/desc-list.scss";
 @import "./blocks/additional-product.scss";
 @import "./blocks/box-additional.scss";
-@import "./blocks/button-additional.scss";
 @import "./blocks/subscription.scss";
 @import "./blocks/form.scss";

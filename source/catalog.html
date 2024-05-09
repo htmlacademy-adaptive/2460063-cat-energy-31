@@ -15,19 +15,29 @@
 <body class="page__body">
   <div class="header-wrapper">
     <header class="header">
-      <a class="logo-energy-link" href="index.html">
-        <img src="#" width="1" height="1" alt="Логотип сайта">
+      <a class="logo-energy" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/general/logo-picture-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/general/logo-picture-tablet.svg">
+          <img class="logo-energy__picture" src="images/general/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <img class="logo-energy__text" src="images/general/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
       <nav class="header-nav">
-        <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="header-nav__menu" width="24" height="24">
+            <use href="../../icons/stack.svg#burger"></use>
+          </svg>
+        </button>
         <ul class="header-nav__list">
           <li class="header-nav__item">
             <a class="header-nav__item-link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="header-nav__item header-nav__item--current">
-            <a class="header-nav__item-link" href="catalog.html">
+          <li class="header-nav__item">
+            <a class="header-nav__item-link header-nav__item--current" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -44,8 +54,8 @@
     <h1 class="title">Каталог продукции</h1>
     <section class="catalog">
       <div class="catalog__wrapper">
-        <ul class="catalog__list catalog-list">
-          <li class="catalog-list__item catalog-card">
+        <ul class="catalog__list">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 768px)" width="161" height="172" srcset="images/catalog/tablet/pro-chiken-xs_tablet@1x.png 1x, images/catalog/tablet/pro-chiken-xs_tablet@2x.png 2x">
@@ -65,9 +75,9 @@
                 <dd class="desc-list__meaning">700 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog/desktop/pro-chiken-m_desktop@1x.png 1x, images/catalog/desktop/pro-chiken-m_desktop@2x.png 2x">
@@ -88,9 +98,9 @@
                 <dd class="desc-list__meaning">1000 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog/tablet/pro-fish-xs_tablet@1x.png 1x, images/catalog/tablet/pro-fish-xs_tablet@2x.png 2x">
@@ -110,9 +120,9 @@
                 <dd class="desc-list__meaning">700 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog/desktop/pro-fish-m_desktop@1x.png 1x, images/catalog/desktop/pro-fish-m_desktop@2x.png 2x">
@@ -133,9 +143,9 @@
                 <dd class="desc-list__meaning">1000 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 768px)" width="161" height="171" srcset="images/catalog/tablet/slim-buckwheat-xs_tablet@1x.png 1x, images/catalog/tablet/slim-buckwheat-xs_tablet@2x.png 2x">
@@ -155,9 +165,9 @@
                 <dd class="desc-list__meaning">400 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog/desktop/slim-buckwheat-m_desktop@1x.png 1x, images/catalog/desktop/slim-buckwheat-m_desktop@2x.png 2x">
@@ -178,9 +188,9 @@
                 <dd class="desc-list__meaning">700 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog-card">
+          <li class="catalog__list-item catalog-card">
             <a class="catalog-card__link-img" href="#">
               <picture>
                 <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog/tablet/slim-rice-xs_tablet@1x.png 1x, images/catalog/tablet/slim-rice-xs_tablet@2x.png 2x">
@@ -200,13 +210,13 @@
                 <dd class="desc-list__meaning">500 ₽</dd>
               </dl>
             </div>
-            <button class="catalog__button button-card" type="button">заказать</button>
+            <button class="catalog__button button" type="button">заказать</button>
           </li>
-          <li class="catalog__item catalog__item--more">
-            <a class="catalog__item-link-more" href="#">Показать еще 100500 товаров
+          <li class="catalog__list-item catalog__list-item--more">
+            <a class="catalog__list-item-link" href="#">Показать еще 100500 товаров
             </a>
-            <p class="catalog__item-excerpt">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__button catalog__button--more" type="button">показать все</button>
+            <p class="catalog__list-item-excerpt">На самом деле вкусов гораздо больше!</p>
+            <button class="catalog__button button button--more" type="button">показать все</button>
           </li>
         </ul>
       </div>
@@ -217,34 +227,34 @@
       <div class="additional-product__item box-additional">
         <dl class="box-additional__list">
           <dt class="box-additional__list-product">сахарозаменитель</dt>
-          <dd class="box-additional__list-volume">1 упаковка (100 г)</dd>
-          <dd class="box-additional__list-price">200 ₽</dd>
+          <dd class="box-additional__list-characteristics">1 упаковка (100 г)</dd>
+          <dd class="box-additional__list-characteristics">200 ₽</dd>
         </dl>
-        <button class="box-additional__button button-additional" type="button">заказать</button>
+        <button class="box-additional__button button" type="button">заказать</button>
       </div>
       <div class="additional-product__item box-additional">
         <dl class="box-additional__list">
           <dt class="box-additional__list-product">питьевая вода</dt>
-          <dd class="box-additional__list-volume">5 литров</dd>
-          <dd class="box-additional__list-price">50 ₽</dd>
+          <dd class="box-additional__list-characteristics">5 литров</dd>
+          <dd class="box-additional__list-characteristics">50 ₽</dd>
         </dl>
-        <button class="box-additional__button button-additional" type="button">заказать</button>
+        <button class="box-additional__button button" type="button">заказать</button>
       </div>
       <div class="additional-product__item box-additional">
         <dl class="box-additional__list">
           <dt class="box-additional__list-product">молоко</dt>
-          <dd class="box-additional__list-volume">1 литр</dd>
-          <dd class="box-additional__list-price">100 ₽</dd>
+          <dd class="box-additional__list-characteristics">1 литр</dd>
+          <dd class="box-additional__list-characteristics">100 ₽</dd>
         </dl>
-        <button class="box-additional__button button-additional" type="button">заказать</button>
+        <button class="box-additional__button button" type="button">заказать</button>
       </div>
       <div class="additional-product__item box-additional">
         <dl class="box-additional__list">
           <dt class="box-additional__list-product">витамины</dt>
-          <dd class="box-additional__list-volume">1 упаковка (30 г)</dd>
-          <dd class="box-additional__list-price">300 ₽</dd>
+          <dd class="box-additional__list-characteristics">1 упаковка (30 г)</dd>
+          <dd class="box-additional__list-characteristics">300 ₽</dd>
         </dl>
-        <button class="box-additional__button button-additional" type="button">заказать</button>
+        <button class="box-additional__button button" type="button">заказать</button>
       </div>
       <div class="additional-product__aside">
         <p class="additional-product__aside-text">Закажите все и получите чехол для кота в подарок!</p>
@@ -258,7 +268,7 @@
           <label class="form__caption">
             <input class="form__input" type="email" name="e-mail" placeholder="кuklachev@gmail.com">
           </label>
-          <button class="form__button button-subscription" type="submit">подписаться</button>
+          <button class="form__button button button--form" type="submit">подписаться</button>
         </form>
       </div>
     </section>
@@ -278,26 +288,33 @@
         </picture>
       </div>
       <div class="footer__logo">
-        <a class="logo-energy-link" href="index.html">
-          <img src="#" width="1" height="1" alt="Логотип сайта">
+        <a class="logo-energy" href="index.html">
+          <img src="images/general/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
       </div>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__item-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">Вконтакте</a>
+            <a class="social__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__item-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">Ютуб</a>
+            <a class="social__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__item-link" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">Телеграм</a>
+            <a class="social__item-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="footer__logo-academy">
-        <a class="footer__logo-academy-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
-          <img class="footer__logo-academy-img" src="#" width="1" height="1" alt="логотип HTML-Academy">
+        <a class="footer__logo-academy-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
+        </a>
+        <a class="footer__logo-academy-icon" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">HTML-Academy</span>
         </a>
       </div>
     </div>

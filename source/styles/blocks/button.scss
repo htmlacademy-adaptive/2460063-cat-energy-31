@@ -1,0 +1,23 @@
+.button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $green;
+}
+
+.button--more {
+  background-color: $dark-white;
+}
+
+.button--form {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 26px;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $green;
+}

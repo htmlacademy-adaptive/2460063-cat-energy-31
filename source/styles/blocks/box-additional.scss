@@ -10,7 +10,7 @@
   }
 }
 
-.box-additional__list-volume {
+.box-additional__list-characteristics {
   font-size: 14px;
   line-height: 14px;
   color: $dark-grey;
@@ -19,23 +19,4 @@
     font-size: 16px;
     line-height: 20px;
   }
-}
-
-.box-additional__list-price {
-  font-size: 14px;
-  line-height: 14px;
-  color: $dark-grey;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-.box-additional__button {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: $color_white;
-  text-align: center;
 }

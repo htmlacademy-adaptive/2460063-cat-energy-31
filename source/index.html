@@ -15,20 +15,21 @@
 <body class="page__body">
   <div class="header-wrapper">
     <header class="header">
-      <a class="logo-energy-link" href="index.html">
+      <a class="logo-energy" href="index.html">
         <picture>
-          <source media="(mins-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/general/logo-img_desktop.svg">
-          <source media="(min-width: 768px)" width="33" height="38" type="image/svg+xml" srcset="images/general/logo-img.svg">
-          <img src="images/general/logo-img.svg" width="33" height="38" alt="Логотип сайта">
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/general/logo-picture-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/general/logo-picture-tablet.svg">
+          <img class="logo-energy__picture" src="images/general/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
-        <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/general/logo-text_desktop.svg">
-          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/general/logo-text_tablet.svg">
-          <img src="images/general/logo-text_mobile.svg" width="101" height="18" alt="Логотип сайта">
-        </picture>
+        <img class="logo-energy__text" src="images/general/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
       <nav class="header-nav">
-        <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="header-nav__menu" width="24" height="24">
+            <use href="../../icons/stack.svg#burger"></use>
+          </svg>
+        </button>
         <ul class="header-nav__list">
           <li class="header-nav__item header-nav__item--current">
             <a class="header-nav__item-link" href="index.html">
@@ -54,7 +55,7 @@
       <div class="programs__wrapper">
         <h1 class="title">Функциональное питание для котов</h1>
         <p class="programs__slogan">Занялся собой? Займись котом!</p>
-        <a class="programs__button button-link-programs" href="#">подобрать программу</a>
+        <a class="programs__button button" href="#">подобрать программу</a>
         <picture>
           <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/index/desktop/product_desktop@1x.png 1x, images/index/desktop/product_desktop@2x.png 2x">
           <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/index/tablet/product_tablet@1x.png 1x, images/index/tablet/product_tablet@2x.png 2x">
@@ -126,6 +127,9 @@
             <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/index/tablet/thin-cat_tablet@1x.png 1x, images/index/tablet/thin-cat_tablet@2x.png 2x">
             <img class="examples__image-after" src="images/index/mobile/thin-cat_mobile@1x.png" srcset="images/index/mobile/thin-cat_mobile@2x.png 2x" width="280" height="256" alt="Кот после прохождения программы">
           </picture>
+          <button class="example__slider-button" type="button">
+            <span class="visually-hidden">Ползунок слайдера</span>
+          </button>
         </div>
       </div>
     </section>
@@ -145,30 +149,33 @@
         </picture>
       </div>
       <div class="footer__logo">
-        <a class="logo-energy-link" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" width="128" height="24" type="image/svg+xml" srcset="images/general/logo-text_desktop.svg">
-            <source media="(min-width: 768px)" width="128" height="24" type="image/svg+xml" srcset="images/general/logo-text_tablet.svg">
-            <img src="images/general/logo-text_mobile.svg" srcset="#" width="320" height="362" alt="Логотип сайта">
-          </picture>
+        <a class="logo-energy" href="index.html">
+          <img src="images/general/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
       </div>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__item-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">Вконтакте</a>
+            <a class="social__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__item-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">Ютуб</a>
+            <a class="social__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__item-link" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">Телеграм</a>
+            <a class="social__item-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="footer__logo-academy">
-        <a class="footer__logo-academy-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
-          <img class="footer__logo-academy-img" src="#" width="1" height="1" alt="логотип HTML-Academy">
+        <a class="footer__logo-academy-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
+        </a>
+        <a class="footer__logo-academy-icon" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">HTML-Academy</span>
         </a>
       </div>
     </div>

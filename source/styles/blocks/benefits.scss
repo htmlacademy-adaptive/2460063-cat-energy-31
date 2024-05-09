@@ -1,3 +1,13 @@
+.benefits__list {
+  list-style-type: none;
+}
+
+.benefits__item {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
 .benefits__text {
   font-size: 14px;
   line-height: 18px;
@@ -6,5 +16,125 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.benefits__item--natural-food::before {
+  content: " ";
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#green");
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.benefits__item--natural-food::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-image: url("../../../../icons/stack.svg#leaf");
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 15px;
+
+  @media (min-width: 768px) {
+    top: 25px;
+    left: 25px;
+  }
+}
+
+.benefits__item--fast-food::before {
+  content: " ";
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#green");
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.benefits__item--fast-food::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-image: url("../../../../icons/stack.svg#water");
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 15px;
+
+  @media (min-width: 768px) {
+    top: 25px;
+    left: 25px;
+  }
+}
+
+.benefits__item--functionality::before {
+  content: " ";
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#green");
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.benefits__item--functionality::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-image: url("../../../../icons/stack.svg#cutlery");
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 15px;
+
+  @media (min-width: 768px) {
+    top: 25px;
+    left: 25px;
+  }
+}
+
+.benefits__item--efficiency::before {
+  content: " ";
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#green");
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.benefits__item--efficiency::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-image: url("../../../../icons/stack.svg#watch");
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 15px;
+
+  @media (min-width: 768px) {
+    top: 25px;
+    left: 25px;
   }
 }

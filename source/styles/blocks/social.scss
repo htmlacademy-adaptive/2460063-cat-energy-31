@@ -1,3 +1,43 @@
-.social {
-  display: flex;
+.social__item-link-vk {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#vk");
+  background-color: $dirty-gray;
+  width: 28px;
+  height: 22px;
+}
+
+.social__item-link-youtube {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#youtube");
+  background-color: $dirty-gray;
+  width: 28px;
+  height: 22px;
+}
+
+.social__item-link-tg {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#tg");
+  background-color: $dirty-gray;
+  width: 28px;
+  height: 22px;
+}
+
+.social__item-link-vk:hover,
+.social__item-link-youtube:hover,
+.social__item-link-tg:hover {
+  background-color: $green;
+}
+
+.social__item-link-vk:active,
+.social__item-link-youtube:active,
+.social__item-link-tg:active {
+  background-color: $green;
+  opacity: 30%;
+}
+
+.social__item-link-vk:focus,
+.social__item-link-youtube:focus,
+.social__item-link-tg:focus {
+  background-color: $green;
+  opacity: 30%;
 }
