@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
@@ -21,41 +22,42 @@
           <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/general/logo-picture-tablet.svg">
           <img class="logo-energy__picture" src="images/general/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
-        <img class="logo-energy__text" src="images/general/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <img class="logo-energy__text" src="images/general/logo-text-icon.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button">
+      <nav class="header-nav header-nav--closed header-nav--nojs">
+        <button class="header-nav__toggle " type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="header-nav__menu" width="24" height="24">
-            <use href="../../icons/stack.svg#burger"></use>
-          </svg>
         </button>
-        <ul class="header-nav__list">
-          <li class="header-nav__item header-nav__item--current">
-            <a class="header-nav__item-link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__item-link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__item-link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list">
+            <li class="header-nav__item header-nav__item--current">
+              <a class="header-nav__item-link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   </div>
   <main class="main-container">
     <section class="programs">
       <div class="programs__wrapper">
-        <h1 class="title">Функциональное питание для котов</h1>
-        <p class="programs__slogan">Занялся собой? Займись котом!</p>
-        <a class="programs__button button" href="#">подобрать программу</a>
+        <div class="programs__information">
+          <h1 class="programs__title title">Функциональное<br> питание для котов</h1>
+          <p class="programs__slogan">Занялся собой? Займись котом!</p>
+          <a class="programs__button button" href="#">подобрать программу</a>
+        </div>
         <picture>
           <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/index/desktop/product_desktop@1x.png 1x, images/index/desktop/product_desktop@2x.png 2x">
           <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/index/tablet/product_tablet@1x.png 1x, images/index/tablet/product_tablet@2x.png 2x">
@@ -81,7 +83,7 @@
     </section>
     <section class="benefits">
       <div class="benefits__wrapper">
-        <h2 class="subtitle">Как это работает</h2>
+        <h2 class="benefits__title title">Как это работает</h2>
         <ul class="benefits__list">
           <li class="benefits__item benefits__item--natural-food">
             <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -100,7 +102,7 @@
     </section>
     <section class="examples">
       <div class="examples__wrapper">
-        <h2 class="subtitle">Живой пример</h2>
+        <h2 class="examples_title title">Живой пример</h2>
         <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="examples__description example">
           <div class="example__table table-example">
@@ -119,15 +121,17 @@
             <span class="example__price-text">Затраты на питание:</span>
             <span class="example__price-sum">15 000 РУБ.</span>
           </div>
+        </div>
+        <div class="examples_photo">
           <picture>
-            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/index/tablet/fat-cat_tablet@1x.png 1x, images/index/tablet/fat-cat_tablet@2x.png 2x">
-            <img class="examples__image-before" src="images/index/mobile/fat-cat_mobile@1x.png" srcset="images/index/mobile/fat-cat_mobile@2x.png 2x" width="280" height="256" alt="Кот до прохождения программы">
+            <source type="image/png" media="(min-width: 768px)" width="280" height="512" srcset="images/index/tablet/fat-cat_tablet@1x.png 1x, images/index/tablet/fat-cat_tablet@2x.png 2x">
+            <img class="examples__image-before" src="images/index/mobile/fat-cat_mobile@1x.png" srcset="images/index/mobile/fat-cat_mobile@2x.png 2x" width="140" height="256" alt="Кот до прохождения программы">
           </picture>
           <picture>
-            <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/index/tablet/thin-cat_tablet@1x.png 1x, images/index/tablet/thin-cat_tablet@2x.png 2x">
-            <img class="examples__image-after" src="images/index/mobile/thin-cat_mobile@1x.png" srcset="images/index/mobile/thin-cat_mobile@2x.png 2x" width="280" height="256" alt="Кот после прохождения программы">
+            <source type="image/png" media="(min-width: 768px)" width="280" height="512" srcset="images/index/tablet/thin-cat_tablet@1x.png 1x, images/index/tablet/thin-cat_tablet@2x.png 2x">
+            <img class="examples__image-after" src="images/index/mobile/thin-cat_mobile@1x.png" srcset="images/index/mobile/thin-cat_mobile@2x.png 2x" width="140" height="256" alt="Кот после прохождения программы">
           </picture>
-          <button class="example__slider-button" type="button">
+          <button class="examples__slider-button" type="button">
             <span class="visually-hidden">Ползунок слайдера</span>
           </button>
         </div>
@@ -138,48 +142,49 @@
     <div class="footer__wrapper">
       <div class="footer__maps maps">
         <aside class="maps__aside">
-          <p class="maps__aside-invite">приглашаем к сотрудничеству дилеров!</p>
-          <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="maps__aside-text">Санкт-Петербург</p>
+          <p class="maps__aside-invite">приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
         </aside>
-        <picture>
-          <source type="image/jpeg" media="(min-width: 1440px)" width="1440" height="400" srcset="images/index/desktop/map_desktop@1x.jpg 1x, images/index/desktop/map_desktop@2x.jpg 2x">
-          <source type="image/jpeg" media="(min-width: 768px)" width="768" height="400" srcset="images/index/tablet/map_tablet@1x.jpg 1x, images/index/tablet/map_tablet@2x.jpg 2x">
-          <img class="maps__image" src="images/index/mobile/map_mobile@1x.jpg" srcset="images/index/mobile/map_mobile@2x.jpg 2x" width="320" height="362" alt="Расположение офиса на карте">
-        </picture>
+        <div class="maps__iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477031682!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1715956546264!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-      <div class="footer__logo">
-        <a class="logo-energy" href="index.html">
-          <img src="images/general/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
+      <div class="footer__contacts contacts">
+        <div class="contacts__logo">
+          <a class="logo-energy-footer" href="index.html">
+            <img src="images/general/logo-text-icon.svg" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+        </div>
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__logo-academy">
+          <a class="contacts__logo-academy-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
+          </a>
+          <a class="contacts__logo-academy-icon" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">HTML-Academy</span>
+          </a>
+        </div>
       </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__item-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__logo-academy">
-        <a class="footer__logo-academy-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">HTML-Academy
-        </a>
-        <a class="footer__logo-academy-icon" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">HTML-Academy</span>
-        </a>
-      </div>
+
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

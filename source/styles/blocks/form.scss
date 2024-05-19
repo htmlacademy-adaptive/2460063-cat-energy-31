@@ -3,6 +3,23 @@
   font-size: 20px;
   line-height: 30px;
   color: $dark-grey;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  width: 280px;
+  height: 56;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+    height: 56px;
+    margin: 0;
+  }
 }
 
 .form__button {
@@ -12,4 +29,12 @@
   color: $color_white;
   text-align: center;
   background-color: $green;
+  width: 280px;
+  margin-bottom: 40px;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    margin-bottom: 0;
+  }
 }

@@ -1,0 +1,78 @@
+@media (max-width: $mobile-width) {
+  .contacts__social::before {
+    content: " ";
+    width: 280px;
+    height: 1px;
+    background-color: $gray;
+    top: 84px;
+    left: 20px;
+    position: absolute;
+  }
+
+  .contacts__social::after {
+    content: " ";
+    width: 280px;
+    height: 1px;
+    background-color: $gray;
+    top: 145px;
+    left: 20px;
+    position: absolute;
+  }
+}
+
+
+.contacts__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
+}
+
+.contacts__logo-academy {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
+.contacts__logo-academy-text {
+  text-decoration: none;
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+    align-self: center;
+  }
+}
+
+.contacts__logo-academy-text:active {
+  opacity: 30%;
+}
+
+.contacts__logo-academy-icon {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#htmlacademy");
+  background-color: $dirty-gray;
+  width: 27px;
+  height: 34px;
+}
+
+.contacts__logo-academy-icon:hover {
+  background-color: $green;
+}
+
+.contacts__logo-academy-icon:active {
+  background-color: $green;
+  opacity: 30%;
+}

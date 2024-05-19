@@ -1,3 +1,22 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: $color-white;
+  align-items: center;
+  margin-bottom: 14px;
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-flow: row nowrap;
+    padding-top: 55px;
+  }
 }

@@ -2,12 +2,38 @@
   position: relative;
 }
 
-.example__price-text {
+.example__table {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.example__price {
+  margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 174px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+}
+
+.example__price-text,
+.example__price-sum {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   color: $color-black;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -15,72 +41,9 @@
   }
 }
 
-.example__slider-button {
-  background-color: $dirty-gray;
-  width: 4px;
-  height: 256px;
-  border: none;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  top: 180px;
-  left: 145px;
-  cursor: pointer;
-
-  @media (min-width: 768px) {
-    top: 235px;
-    left: 555px;
-    height: 512px;
+.example__price-text {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 63px;
   }
-}
-
-.example__slider-button:hover {
-  background-color: $green;
-}
-
-.example__slider-button:active {
-  opacity: 60%;
-}
-
-.example__slider-button::before {
-  content: " ";
-  background-color: $color-white;
-  border: 2px solid $dirty-gray;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: -15px;
-}
-
-.example__slider-button:hover::before {
-  border-color: $green;
-}
-
-.example__slider-button:active::before {
-  opacity: 60%;
-}
-
-.example__slider-button::after {
-  content: " ";
-  mask-image: url("../../../../icons/stack.svg#slider");
-  background-color: $dirty-gray;
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  top: 140px;
-  left: -5px;
-
-  @media (min-width: 768px) {
-    top: 269px;
-    left: -6px;
-  }
-}
-
-.example__slider-button:hover::after {
-  background-color: $green;
-}
-
-.example__slider-button:active::after {
-  opacity: 60%;
 }

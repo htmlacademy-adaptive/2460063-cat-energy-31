@@ -1,5 +1,22 @@
-.advantages {
-  background-color: $gray;
+
+.advantages__wrapper {
+  padding: 0 20px;
+  margin: 0 auto 20px;
+  min-width: 280px;
+  width: 100%;
+  box-sizing: border-box;
+
+
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1220px;
+    margin: 0 auto 71px 0;
+    padding: 0 110px;
+  }
 }
 
 .advantages__subtitle {
@@ -7,45 +24,120 @@
   font-size: 24px;
   line-height: 37px;
   color: $color_black;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-top: 7px;
+  margin-left: 70px;
+  margin-bottom: 29px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+    margin-top: 34px;
+  }
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
   }
 }
 
 .advantages__item {
   position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  background-color: $dark-white;
+  padding: 24px 33px 22px 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    padding: 77px 63px 57px 52px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 41px 63px 60px 52px;
+  }
 }
 
 .advantages__description {
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  margin: 0 0 41px;
+  position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     color: $color-black;
     font-size: 16px;
     line-height: 24px;
+    width: 340px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 457px;
+    margin-bottom: 27px;
   }
 }
+
+/* @media (max-width: 767px) {
+  .advantages__description::after {
+    content: " ";
+    min-width: 240px;
+    width: 100%;
+    height: 1px;
+    background-color: $gray;
+    position: absolute;
+    top: 111px;
+    left: 1px;
+  }
+} */
 
 .advantages__item--losing-weight::before {
   content: " ";
   display: block;
-  mask-image: url("../../../../icons/stack.svg#ellipse");
   background-color: $green;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  position: absolute;
 
   @media (min-width: 768px) {
     width: 200px;
     height: 200px;
+    left: 445px;
+    top: 90px;
   }
 
   @media (min-width: 1440px) {
     width: 100px;
     height: 100px;
+    left: 51px;
+    top: 47px;
   }
 }
 
@@ -56,40 +148,45 @@
   background-image: url("../../../../icons/stack.svg#cat-slim");
   width: 36px;
   height: 50px;
-  top: -5px;
-  left: 6px;
+  top: 19px;
+  left: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    top: -12px;
-    left: 27px;
+    top: 80px;
+    left: 473px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    top: -7px;
-    left: 13px;
+    top: 41px;
+    left: 68px;
   }
 }
 
 .advantages__item--weight-gain::before {
   content: " ";
   display: block;
-  mask-image: url("../../../../icons/stack.svg#ellipse");
   background-color: $green;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  position: absolute;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
+    left: 445px;
+    top: 90px;
   }
 
   @media (min-width: 1440px) {
     width: 100px;
     height: 100px;
+    left: 52px;
+    top: 47px;
   }
 }
 
@@ -100,21 +197,20 @@
   background-image: url("../../../../icons/stack.svg#cat-pro");
   width: 67px;
   height: 28px;
-  top: 10px;
-  left: -8px;
+  top: 36px;
+  left: 12px;
 
   @media (min-width: 768px) {
     width: 268px;
     height: 112px;
-    top: 45px;
-    left: -30px;
+    top: 135px;
+    left: 412px;
   }
 
   @media (min-width: 1440px) {
     width: 134px;
     height: 56px;
-    top: 15px;
-    left: -18px;
+    top: 66px;
+    left: 38px;
   }
 }
-

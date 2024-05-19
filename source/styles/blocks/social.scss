@@ -1,25 +1,42 @@
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-right: 381px;
+  }
+}
+
 .social__item-link-vk {
   display: block;
   mask-image: url("../../../../icons/stack.svg#vk");
   background-color: $dirty-gray;
-  width: 28px;
-  height: 22px;
+  width: 27px;
+  height: 17px;
 }
 
 .social__item-link-youtube {
   display: block;
   mask-image: url("../../../../icons/stack.svg#youtube");
   background-color: $dirty-gray;
-  width: 28px;
-  height: 22px;
+  width: 24px;
+  height: 19px;
 }
 
 .social__item-link-tg {
   display: block;
   mask-image: url("../../../../icons/stack.svg#tg");
   background-color: $dirty-gray;
-  width: 28px;
-  height: 22px;
+  width: 20px;
+  height: 17px;
 }
 
 .social__item-link-vk:hover,

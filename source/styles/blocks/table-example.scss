@@ -3,9 +3,73 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-black;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 9px;
+  padding-top: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.table-example__item {
+  min-width: 124px;
+  border: 1px solid $benefits-border;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.table-example__item-text {
+  text-align: center;
+  margin: 0;
+  background-color: $light-gray;
+  width: 59px;
+  margin-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    background-color: $color-white;
+    align-self: center;
+    min-width: 125px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $light-gray;
+  }
+}
+
+
+.table-example__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 167px;
+    gap: 43px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    gap: 42px;
+    margin-bottom: 62px;
+    justify-content: flex-start;
   }
 }

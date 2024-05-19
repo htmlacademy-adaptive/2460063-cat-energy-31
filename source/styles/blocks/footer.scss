@@ -1,32 +1,45 @@
-.footer {
+
+.footer__wrapper {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 738px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1330px;
+  }
+}
+
+.footer__maps {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  align-items: center;
+  gap: 40px;
   background-color: $dark-white;
-}
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
 
-.footer__logo-academy-text {
-  text-decoration: none;
-  color: $dark-grey;
-  font-size: 16px;
-  line-height: 20px;
-}
 
-.footer__logo-academy-text:active {
-  opacity: 30%;
-}
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    flex-direction: row;
+    gap: 0;
+  }
 
-.footer__logo-academy-icon {
-  display: block;
-  mask-image: url("../../../../icons/stack.svg#htmlacademy");
-  background-color: $dirty-gray;
-  width: 27px;
-  height: 34px;
-}
-
-.footer__logo-academy-icon:hover {
-  background-color: $green;
-}
-
-.footer__logo-academy-icon:active {
-  background-color: $green;
-  opacity: 30%;
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+    gap: 0;
+  }
 }
