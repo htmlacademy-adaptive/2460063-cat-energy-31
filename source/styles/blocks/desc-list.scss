@@ -2,8 +2,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -12,6 +12,19 @@
   }
 }
 
-.desc-list__meaning {
-  justify-self: flex-end;
+.desc-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-catalog;
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $border-catalog;
+    padding: 0 0 11px;
+    box-sizing: border-box;
+  }
 }

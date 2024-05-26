@@ -6,9 +6,9 @@
 
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 407px 181px 42px;
-    padding: 0 38px;
-    margin-bottom: 12px;
+    grid-template-columns: 407px 132px 90px;
+    margin: 0;
+    padding: 0 0 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +33,7 @@
     font-size: 20px;
     line-height: 20px;
     grid-column: span 1;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +60,14 @@
 .box-additional__list-value {
   @media (min-width: $tablet-width) {
     padding: 3px 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 3px;
+
+    margin: 0;
   }
 }
 
@@ -66,11 +75,13 @@
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    align-self: flex-end;
   }
 }
 
@@ -82,7 +93,6 @@
   @media (min-width: $tablet-width) {
     width: 632px;
     align-self: center;
-    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {

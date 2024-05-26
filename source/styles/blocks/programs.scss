@@ -1,15 +1,36 @@
+.programs {
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      background-color: $background-cat;
+      background-position: 0 0;
+
+      background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/index/desktop/index-background-desktop.png");
+      background-repeat: no-repeat;
+      height: 694px;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
 .programs__wrapper {
   display: flex;
   flex-direction: column;
-  min-width: 280px;
-  width: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   position: relative;
 
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    min-width: 708px;
     box-sizing: border-box;
     margin-bottom: 526px;
   }
@@ -18,68 +39,30 @@
     margin-bottom: 266px;
     align-items: flex-start;
     padding: 0 110px;
+    max-width: 1440px;
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
-  .programs__wrapper::before {
-    content: " ";
-    background-image: url("../../images/index/mobile/index-background-desktop 2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-width: 320px;
-    min-height: 302px;
-    width: 100%;
-    position: absolute;
-  }
-}
-
-/*
-  @media (min-width: $desktop-width) {
-    content: " ";
-    background-image: url("../../images/index/desktop/index-background-desktop.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: absolute;
-    min-width: 720px;
-    width: 720px;
-    height: 694px;
-    top: 0;
-    left: 720px;
-  } */
-
-.programs__wrapper::after {
-  content: " ";
-  background-color: $green-transparent;
+.programs__wrapper::before {
+  content: "";
+  background-color: $background-cat;
+  background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/index/mobile/index-background-desktop_2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+
   background-position: center;
-  min-width: 320px;
-  min-height: 302px;
+  height: 302px;
   width: 100%;
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    border: none;
-    background-color: $color-white;
-  }
-
-  @media (min-width: $desktop-width) {
-    content: " ";
-    background-color: $green-transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 694px;
-    width: 100%;
-    position: absolute;
-    top: -114;
-    left: 720px;
+    display: none;
   }
 }
 
+
 .programs__information {
-  z-index: 1;
+  z-index: 2;
+  position: relative;
   padding-top: 27px;
   align-self: center;
 
@@ -119,7 +102,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 312px;
+  margin-bottom: 302px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -139,33 +122,30 @@
   position: absolute;
   z-index: 1;
   top: 167px;
-  left: 21px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
     top: 268px;
-    left: 31px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
-    margin-left: 415px;
+    margin-left: 300px;
     margin-top: -630px;
   }
 }
 
 .programs__button {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: $color-white;
   text-decoration: none;
-  text-transform: uppercase;
-  background-color: $green;
-  padding: 8px 63px;
+  display: block;
+  padding: 10px 0;
   box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
 
 
   @media (min-width: $tablet-width) {
@@ -177,6 +157,7 @@
     height: 54px;
     box-sizing: border-box;
     display: block;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

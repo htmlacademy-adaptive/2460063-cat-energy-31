@@ -1,17 +1,7 @@
 
 .footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 738px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1330px;
-  }
+  margin: 0 auto;
+  background-color: $dark-white;
 }
 
 .footer__maps {
@@ -25,9 +15,6 @@
   flex-direction: column;
   padding: 40px 20px;
   align-items: center;
-  gap: 40px;
-  background-color: $dark-white;
-  width: 100%;
   box-sizing: border-box;
   position: relative;
 
@@ -36,10 +23,12 @@
     padding: 55px 30px;
     flex-direction: row;
     gap: 0;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
     padding: 66px 110px;
-    gap: 0;
+    margin: 0 auto;
   }
 }

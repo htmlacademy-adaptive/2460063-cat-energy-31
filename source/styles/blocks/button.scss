@@ -6,10 +6,33 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $green;
+  border: none;
+  padding: 0;
+
+  &:hover {
+    background-color: $button-state;
+  }
+
+  &:active {
+    background-color: $button-state;
+    opacity: 30%;
+  }
 }
 
-.button--more {
+.catalog__button--more {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
   background-color: $dark-white;
+  color: $dark-grey;
+  padding: 0;
+  border: none;
+
+
+  &:hover,
+  &:active {
+    background-color: $button-state-more;
+  }
 }
 
 .button--form {
@@ -20,4 +43,5 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $green;
+  padding: 0;
 }

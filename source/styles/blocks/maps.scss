@@ -14,10 +14,14 @@
   @media (min-width: $desktop-width) {
     padding: 60px 78px 60px 80px;
     position: absolute;
-    top: 97px;
+    top: 95px;
     left: 110px;
     gap: 87px;
   }
+}
+
+.maps__aside--footer {
+  background-color: $dark-white;
 }
 
 .maps__aside-invite {
@@ -57,6 +61,7 @@
     text-align: left;
   }
 }
+
 
 .maps__iframe iframe {
   display: block;

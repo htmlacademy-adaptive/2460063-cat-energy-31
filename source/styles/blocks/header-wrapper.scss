@@ -1,18 +1,18 @@
 .header-wrapper {
   background-color: $color-white;
-  min-width: 280px;
-  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
+  border-bottom: 1px solid $border-catalog;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
-    padding: 0 30px;
+    padding: 0 34px 0 30px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 110px;
     box-sizing: content-box;
   }
 }

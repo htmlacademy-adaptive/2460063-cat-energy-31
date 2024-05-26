@@ -2,17 +2,26 @@
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 30px;
+  text-transform: uppercase;
   color: $dark-grey;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding-left: 13px;
   margin-bottom: 16px;
   width: 280px;
   height: 56;
+  border: 1px solid $benefits-border;
+
+  &:focus {
+    border-color: $dark-grey;
+  }
+
 
   @media (min-width: $tablet-width) {
     width: 376px;
     height: 56px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,29 +1,23 @@
-@media (max-width: $mobile-width) {
-  .contacts__social::before {
-    content: " ";
-    width: 280px;
-    height: 1px;
-    background-color: $gray;
-    top: 84px;
-    left: 20px;
-    position: absolute;
-  }
+.contacts__social {
+  border-bottom: 1px solid $gray;
+  border-top: 1px solid $gray;
+  min-width: 280px;
+  width: 100%;
+  padding: 19px 0;
 
-  .contacts__social::after {
-    content: " ";
-    width: 280px;
-    height: 1px;
-    background-color: $gray;
-    top: 145px;
-    left: 20px;
-    position: absolute;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
   }
 }
 
 
 .contacts__logo {
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
-    margin-right: 160px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,11 +28,13 @@
 .contacts__logo-academy {
   display: flex;
   justify-content: space-between;
-  min-width: 280px;
+  width: 100%;
+  padding-top: 20px;
+
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 }
 
@@ -75,4 +71,12 @@
 .contacts__logo-academy-icon:active {
   background-color: $green;
   opacity: 30%;
+}
+
+.contacts__img:hover {
+  opacity: 30%;
+}
+
+.contacts__img:active {
+  opacity: 60%;
 }

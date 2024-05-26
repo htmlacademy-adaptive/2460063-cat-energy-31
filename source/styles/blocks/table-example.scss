@@ -34,19 +34,17 @@
 
 .table-example__item-text {
   text-align: center;
-  margin: 0;
   background-color: $light-gray;
   width: 59px;
-  margin-left: 32px;
+  margin: 0 auto;
+  padding: 0 13px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
     background-color: $color-white;
-    align-self: center;
-    min-width: 125px;
+    width: 125px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background-color: $light-gray;
   }
 }

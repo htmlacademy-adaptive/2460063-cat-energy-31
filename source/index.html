@@ -59,6 +59,9 @@
           <a class="programs__button button" href="#">подобрать программу</a>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/index/desktop/product_desktop@1x.webp 1x, images/index/desktop/product_desktop@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/index/tablet/product_tablet@1x.webp 1x, images/index/tablet/product_tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="images/index/mobile/product_mobile@1x.webp, images/index/mobile/product_mobile@2x.webp 2x" width="280" height="270">
           <source type="image/png" media="(min-width: 1440px)" width="552" height="499" srcset="images/index/desktop/product_desktop@1x.png 1x, images/index/desktop/product_desktop@2x.png 2x">
           <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/index/tablet/product_tablet@1x.png 1x, images/index/tablet/product_tablet@2x.png 2x">
           <img class="programs__image-product" src="images/index/mobile/product_mobile@1x.png" srcset="images/index/mobile/product_mobile@2x.png 2x" width="280" height="270" alt="Продукция кэт энерджи">
@@ -71,12 +74,12 @@
           <li class="advantages__item advantages__item--losing-weight">
             <h3 class="advantages__subtitle">похудение</h3>
             <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="advantages__link button-link-catalog" href="#">каталог slim</a>
+            <a class="advantages__link" href="#">каталог slim</a>
           </li>
           <li class="advantages__item advantages__item--weight-gain">
             <h3 class="advantages__subtitle">набор массы</h3>
             <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="advantages__link button-link-catalog" href="#">каталог pro</a>
+            <a class="advantages__link" href="#">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -124,12 +127,16 @@
         </div>
         <div class="examples_photo">
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/index/tablet/fat-cat_tablet@1x.webp 1x, images/index/tablet/fat-cat_tablet@2x.webp 2x" width="280" height="512">
+            <source type="image/webp" srcset="images/index/mobile/fat-cat_mobile@1x.webp 1x, images/index/mobile/fat-cat_mobile@2x.webp 2x" width="140" height="256">
             <source type="image/png" media="(min-width: 768px)" width="280" height="512" srcset="images/index/tablet/fat-cat_tablet@1x.png 1x, images/index/tablet/fat-cat_tablet@2x.png 2x">
-            <img class="examples__image-before" src="images/index/mobile/fat-cat_mobile@1x.png" srcset="images/index/mobile/fat-cat_mobile@2x.png 2x" width="140" height="256" alt="Кот до прохождения программы">
+            <img class="examples__image-before" src="images/index/mobile/fat-cat_mobile@1x.png" srcset="images/index/mobile/fat-cat_mobile@2x.png 2x" width="140" height="256" alt="Кот до прохождения программы" loading="lazy">
           </picture>
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/index/tablet/thin-cat_tablet@1x.webp 1x, images/index/tablet/thin-cat_tablet@2x.webp 2x" width="280" height="512">
+            <source type="image/webp" srcset="images/index/mobile/thin-cat_mobile@1x.webp 1x, images/index/mobile/thin-cat_mobile@2x.webp 2x" width="140" height="256">
             <source type="image/png" media="(min-width: 768px)" width="280" height="512" srcset="images/index/tablet/thin-cat_tablet@1x.png 1x, images/index/tablet/thin-cat_tablet@2x.png 2x">
-            <img class="examples__image-after" src="images/index/mobile/thin-cat_mobile@1x.png" srcset="images/index/mobile/thin-cat_mobile@2x.png 2x" width="140" height="256" alt="Кот после прохождения программы">
+            <img class="examples__image-after" src="images/index/mobile/thin-cat_mobile@1x.png" srcset="images/index/mobile/thin-cat_mobile@2x.png 2x" width="140" height="256" alt="Кот после прохождения программы" loading="lazy">
           </picture>
           <button class="examples__slider-button" type="button">
             <span class="visually-hidden">Ползунок слайдера</span>

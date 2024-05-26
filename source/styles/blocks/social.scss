@@ -4,14 +4,15 @@
   margin: 0;
   display: flex;
   gap: 28px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    margin-right: 125px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-right: 381px;
+    justify-content: flex-start;
   }
 }
 
