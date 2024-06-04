@@ -1,0 +1,126 @@
+.maps__aside {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px 20px;
+  background-color: $color-white;
+  justify-content: center;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 70px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 87px;
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    max-height: 305px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+.maps__aside--footer {
+  background-color: $dark-white;
+}
+
+.maps__aside-invite {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-black;
+  margin: 0;
+  width: 140px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    word-wrap: break-word;
+  }
+}
+
+.maps__aside-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+  margin: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    word-wrap: break-word;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    text-align: left;
+    gap: 20px;
+  }
+}
+
+.maps__iframe {
+  position: relative;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    background-image:
+      image-set(url("../../images/general/mobile/map-marker-mobile.png@1x.webp") type("image/webp") 1x,
+      url("../../images/general/mobile/map-marker-mobile.png@2x.webp") type("image/webp") 2x,
+      url("../../images/general/mobile/map-marker-mobile.png@1x.png") type("image/png") 1x,
+      url("../../images/general/mobile/map-marker-mobile.png@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    left: 42%;
+    top: 140px;
+
+
+    @media (min-width: $tablet-width) {
+      background-image:
+        image-set(url("../../images/general/tablet/map-marker-tablet.png@1x.webp") type("image/webp") 1x,
+        url("../../images/general/tablet/map-marker-tablet.png@2x.webp") type("image/webp") 2x,
+        url("../../images/general/tablet/map-marker-tablet.png@1x.png") type("image/png") 1x,
+        url("../../images/general/tablet/map-marker-tablet.png@2x.png") type("image/png") 2x);
+      top: 145px;
+      left: 43%;
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 129px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+.maps__iframe iframe {
+  display: block;
+  border: none;
+  min-width: 320px;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    min-height: 400px;
+  }
+}

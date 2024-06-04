@@ -1,0 +1,33 @@
+
+.footer__wrapper {
+  margin: 0 auto;
+  background-color: $dark-white;
+}
+
+.footer__maps {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 68px 110px;
+    margin: 0 auto;
+  }
+}

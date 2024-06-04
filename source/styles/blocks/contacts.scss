@@ -1,0 +1,86 @@
+.contacts__social {
+  border-bottom: 1px solid $gray;
+  border-top: 1px solid $gray;
+  min-width: 280px;
+  width: 100%;
+  padding: 21px 0 18px;
+
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+
+.contacts__logo {
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.contacts__logo-energy:hover {
+  opacity: 80%;
+}
+
+.contacts__logo-energy:active {
+  opacity: 60%;
+}
+
+.contacts__logo-academy {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: flex-end;
+  }
+}
+
+.contacts__logo-academy-text {
+  text-decoration: none;
+  color: $dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+    align-self: center;
+  }
+}
+
+.contacts__logo-academy-text:active {
+  opacity: 30%;
+}
+
+.contacts__logo-academy-icon {
+  display: block;
+  mask-image: url("../../../../icons/stack.svg#htmlacademy");
+  background-color: $dirty-gray;
+  width: 27px;
+  height: 34px;
+}
+
+.contacts__logo-academy-icon:hover {
+  background-color: $green;
+}
+
+.contacts__logo-academy-icon:active {
+  background-color: $green;
+  opacity: 30%;
+}
+
+.contacts__img:hover {
+  opacity: 30%;
+}
+
+.contacts__img:active {
+  opacity: 60%;
+}

@@ -1,4 +1,4 @@
-# Папка для общих стилей (не БЭМ-блоки)
+# Папка для глобальных стилей
 
 _fonts.scss_
 ```scss
@@ -27,7 +27,6 @@ img {
   object-fit: contain;
 }
 
-body {
-  margin: 0;
-}
+html {}
+body {}
 ```

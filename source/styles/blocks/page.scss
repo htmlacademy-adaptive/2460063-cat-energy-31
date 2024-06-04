@@ -1,0 +1,29 @@
+.page {
+  background-color: $color-white;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page__body--current {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: $background-cat;
+      background-image:
+        linear-gradient($green-transparent, $green-transparent),
+        image-set( url("../../images/index/desktop/index-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/index/desktop/index-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/index/desktop/index-background-desktop@1x.png") type("image/png") 1x,
+        url("../../images/index/desktop/index-background-desktop@2x.png") type("image/png") 2x);
+      background-repeat: no-repeat;
+      height: 694px;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

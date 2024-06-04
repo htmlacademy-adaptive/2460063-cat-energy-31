@@ -1,0 +1,75 @@
+.subtitle {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-black;
+  margin: 0;
+  background-color: $color-white;
+  width: fit-content;
+  box-shadow: 40px 0 0 0 $color-white;
+
+  &::after {
+    content: " ";
+    width: 50vw;
+    height: 2px;
+    background-color: $green;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    position: absolute;
+    box-shadow: 50vw 0 0 0 $green;
+    z-index: -1;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    background-color: $color-white;
+    border: none;
+    box-shadow: 40px 0 0 0 $color-white;
+
+    &::after {
+      content: " ";
+      width: 50vw;
+      height: 2px;
+      background-color: $green;
+      left: -30px;
+      position: absolute;
+      box-shadow: 50vw 0 0 0 $green;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    width: fit-content;
+    box-shadow: -40px 0 0 0 $color-white, 40px 0 0 0 $color-white;
+
+
+    &::after {
+      content: " ";
+      width: 50vw;
+      height: 2px;
+      background-color: $green;
+      left: 0;
+      position: absolute;
+      box-shadow: 50vw 0 0 0 $green;
+      z-index: -1;
+    }
+
+    &::before {
+      content: " ";
+      width: 50vw;
+      height: 2px;
+      background-color: $green;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -110px;
+      position: absolute;
+      box-shadow: -50vw 0 0 0 $green;
+      z-index: -1;
+    }
+  }
+}

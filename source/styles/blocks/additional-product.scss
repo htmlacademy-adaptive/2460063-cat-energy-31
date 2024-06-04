@@ -1,0 +1,159 @@
+
+.additional-product__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 96px;
+    max-width: 1440px;
+  }
+}
+
+.additional-product__subtitle {
+  position: relative;
+  margin-bottom: 35px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.additional-product__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  border-bottom: 1px solid $border-catalog;
+  padding-bottom: 17px;
+  margin: 0 auto;
+  border-top: 1px solid $border-catalog;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-catalog;
+    margin-bottom: -1px;
+    padding: 26px 37px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: -1px;
+    padding: 15px 0 16px;
+    border: none;
+    border-top: 1px solid $border-catalog;
+    border-bottom: 1px solid $border-catalog;
+    width: 894px;
+  }
+}
+
+.additional-product__aside {
+  min-height: 290px;
+  background-image:
+    linear-gradient($green-transparent, $green-transparent),
+    image-set( url("../../images/catalog/mobile/background-catalog-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/catalog/mobile/background-catalog-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/catalog/mobile/background-catalog-mobile@1x.png") type("image/png") 1x,
+    url("../../images/catalog/mobile/background-catalog-mobile@2x.png") type("image/png") 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 36px;
+  margin-bottom: 39px;
+  position: relative;
+
+  &::after {
+    content: " ";
+    mask-image: url("../../../../icons/stack.svg#gift");
+    background-color: $color-white;
+    width: 78px;
+    height: 80px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    margin-top: 71px;
+    margin-bottom: 79px;
+    background-image:
+      linear-gradient($green-transparent, $green-transparent),
+      image-set( url("../../images/catalog/tablet/background-catalog-table@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/tablet/background-catalog-table@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/tablet/background-catalog-table@1x.png") type("image/png") 1x,
+      url("../../images/catalog/tablet/background-catalog-table@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    &::after {
+      top: 58px;
+      left: 119px;
+      position: absolute;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 288px;
+    width: 245px;
+    position: absolute;
+    top: 121px;
+    right: 109px;
+    margin: 0;
+    background-image:
+      linear-gradient($green-transparent, $green-transparent),
+      image-set( url("../../images/catalog/desktop/background-catalog-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/desktop/background-catalog-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/desktop/background-catalog-desktop@1x.png") type("image/png") 1x,
+      url("../../images/catalog/desktop/background-catalog-desktop@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      top: 57px;
+      left: 123px;
+      position: absolute;
+    }
+  }
+}
+
+.additional-product__aside-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color_white;
+  margin: 0;
+  min-width: 161px;
+  padding: 187px 61px 2px 58px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin: 0 124px 0 auto;
+    padding: 70px 0;
+    width: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    text-align: center;
+  }
+}
