@@ -1,3 +1,28 @@
+.table-example__item-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: $dark-grey;
+  text-align: center;
+  background-color: $light-gray;
+  width: 59px;
+  margin: 0 0 -13px;
+  padding: 0 14px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $color-white;
+    padding: 0 8px;
+    margin: 0 0 -8px;
+    width: fit-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-gray;
+  }
+}
+
 .table-example__item-value {
   font-family: $secondary-font;
   font-size: 24px;
@@ -5,8 +30,10 @@
   color: $color-black;
   margin: 0;
   text-align: center;
-  margin-bottom: 9px;
   padding-top: 14px;
+  word-wrap: break-word;
+  width: 121px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -20,32 +47,28 @@
 }
 
 .table-example__item {
-  min-width: 124px;
-  border: 1px solid $benefits-border;
-  height: 56px;
+  border: 1px solid $benefits-border-hover;
+  box-sizing: border-box;
+  width: 124px;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
     padding-top: 15px;
     display: flex;
     flex-direction: column;
-  }
-}
-
-.table-example__item-text {
-  text-align: center;
-  background-color: $light-gray;
-  width: 59px;
-  margin: 0 auto;
-  padding: 0 13px;
-
-  @media (min-width: $tablet-width) {
-    background-color: $color-white;
-    width: 125px;
+    min-height: 72px;
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $light-gray;
+    gap: 0;
   }
 }
 
@@ -55,19 +78,18 @@
   padding: 0;
   margin: 0 0 20px;
   display: flex;
-  gap: 20px;
+  gap: 32px;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-right: 167px;
+    margin: 0 167px 102px 0;
     gap: 43px;
-    margin-bottom: 102px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin: 0 0 61px;
     gap: 42px;
-    margin-bottom: 62px;
     justify-content: flex-start;
   }
 }

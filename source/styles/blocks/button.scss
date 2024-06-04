@@ -7,7 +7,10 @@
   text-transform: uppercase;
   background-color: $green;
   border: none;
-  padding: 0;
+  cursor: pointer;
+  word-wrap: break-word;
+  padding: 0 2px;
+
 
   &:hover {
     background-color: $button-state;
@@ -15,7 +18,7 @@
 
   &:active {
     background-color: $button-state;
-    opacity: 30%;
+    color: $color-white-opacity;
   }
 }
 
@@ -25,8 +28,11 @@
   line-height: 20px;
   background-color: $dark-white;
   color: $dark-grey;
-  padding: 0;
   border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  word-wrap: break-word;
+  padding: 0 2px;
 
 
   &:hover,
@@ -43,5 +49,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $green;
-  padding: 0;
+  cursor: pointer;
+  word-wrap: break-word;
+  padding: 0 2px;
 }

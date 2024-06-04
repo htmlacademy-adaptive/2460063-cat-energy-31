@@ -3,7 +3,7 @@
   border-top: 1px solid $gray;
   min-width: 280px;
   width: 100%;
-  padding: 19px 0;
+  padding: 21px 0 18px;
 
 
   @media (min-width: $tablet-width) {
@@ -14,15 +14,19 @@
 
 
 .contacts__logo {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-right: 416px;
-  }
+.contacts__logo-energy:hover {
+  opacity: 80%;
+}
+
+.contacts__logo-energy:active {
+  opacity: 60%;
 }
 
 .contacts__logo-academy {

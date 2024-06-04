@@ -1,22 +1,45 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+
   background-color: $color-white;
-  align-items: center;
-  margin-bottom: 13px;
   position: relative;
-  padding: 0 20px;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
-    flex-flow: row nowrap;
-    padding: 0;
-    margin: 0;
-    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 265px auto;
+    gap: 0;
+    padding: 25px 0 0;
   }
 
-  @media (min-width: 1440px) {
-    flex-flow: row nowrap;
+  @media (min-width: $desktop-width) {
     padding-top: 55px;
   }
+}
+
+.header__logo {
+  display: grid;
+  grid-template-columns: 31% 37% auto;
+  padding: 0 20px 13px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 13px;
+    padding: 0;
+  }
+}
+
+.header__logo-text {
+  place-self: center center;
+}
+
+.header__logo-picture:hover,
+.header__logo-text:hover {
+  opacity: 80%;
+}
+
+.header__logo-picture:active,
+.header__logo-text:active {
+  opacity: 60%;
 }

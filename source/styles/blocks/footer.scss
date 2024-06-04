@@ -20,15 +20,14 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
-    flex-direction: row;
-    gap: 0;
-    justify-content: space-between;
+    padding: 57px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 66px 110px;
+    padding: 68px 110px;
     margin: 0 auto;
   }
 }

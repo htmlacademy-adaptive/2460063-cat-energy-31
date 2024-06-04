@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
@@ -16,14 +20,21 @@
 <body class="page__body">
   <div class="header-wrapper">
     <header class="header">
-      <a class="logo-energy" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/general/logo-picture-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/general/logo-picture-tablet.svg">
-          <img class="logo-energy__picture" src="images/general/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <img class="logo-energy__text" src="images/general/logo-text-icon.svg" width="101" height="18" alt="Логотип Cat Energy">
-      </a>
+      <div class="header__logo">
+        <a class="header__logo-picture" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/general/desktop/logo-picture-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/general/tablet/logo-picture-tablet.svg">
+            <img class="logo-energy" src="images/general/mobile/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+        <a class="header__logo-text" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/general/desktop/logo-text-desktop.svg">
+            <img class="logo-energy" src="images/general/mobile/logo-text-mobile.svg" width="101" height="18" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+      </div>
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <button class="header-nav__toggle " type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -340,7 +351,7 @@
           <button class="box-additional__button button" type="button">заказать</button>
         </div>
         <div class="additional-product__aside">
-          <p class="additional-product__aside-text">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional-product__aside-text">Закажите все<br> и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -361,8 +372,8 @@
     <div class="footer__wrapper">
       <div class="footer__maps maps">
         <aside class="maps__aside maps__aside--footer">
-          <p class="maps__aside-invite">приглашаем<br> к сотрудничеству дилеров!</p>
-          <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p class="maps__aside-invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="maps__aside-text">ул. Большая Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
         </aside>
         <div class="maps__iframe">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477031682!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1715956546264!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -370,8 +381,8 @@
       </div>
       <div class="footer__contacts contacts">
         <div class="contacts__logo">
-          <a class="contacts__img" href="index.html">
-            <img src="images/general/logo-text-icon.svg" width="128" height="24" alt="Логотип Cat Energy">
+          <a class="contacts__logo-energy" href="index.html">
+            <img class="logo-energy" src="images/general/desktop/logo-text-desktop.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
         </div>
         <div class="contacts__social social">

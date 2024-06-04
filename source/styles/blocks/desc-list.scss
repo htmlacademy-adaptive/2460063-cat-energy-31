@@ -9,6 +9,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    row-gap: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 0;
   }
 }
 
@@ -17,14 +22,23 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $border-catalog;
-    padding: 5px 0;
+    border-bottom: 1px solid $benefits-border-hover;
+    padding: 0 0 4px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 1px solid $border-catalog;
-    padding: 0 0 11px;
+    padding: 4px 0 8px;
     box-sizing: border-box;
+  }
+}
+
+.desc-list__meaning {
+  word-wrap: break-word;
+  max-width: 41px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 55px;
+    word-wrap: break-word;
   }
 }

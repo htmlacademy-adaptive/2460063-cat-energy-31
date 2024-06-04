@@ -12,11 +12,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    gap: 87px;
     padding: 60px 78px 60px 80px;
     position: absolute;
     top: 95px;
     left: 110px;
-    gap: 87px;
+    z-index: 1;
+    max-height: 305px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 }
 
@@ -37,6 +41,7 @@
     font-size: 20px;
     line-height: 26px;
     width: 163px;
+    word-wrap: break-word;
   }
 }
 
@@ -52,6 +57,10 @@
     line-height: 20px;
     width: 157px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    word-wrap: break-word;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +68,46 @@
     line-height: 20px;
     width: 157px;
     text-align: left;
+    gap: 20px;
+  }
+}
+
+.maps__iframe {
+  position: relative;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    background-image:
+      image-set(url("../../images/general/mobile/map-marker-mobile.png@1x.webp") type("image/webp") 1x,
+      url("../../images/general/mobile/map-marker-mobile.png@2x.webp") type("image/webp") 2x,
+      url("../../images/general/mobile/map-marker-mobile.png@1x.png") type("image/png") 1x,
+      url("../../images/general/mobile/map-marker-mobile.png@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    left: 42%;
+    top: 140px;
+
+
+    @media (min-width: $tablet-width) {
+      background-image:
+        image-set(url("../../images/general/tablet/map-marker-tablet.png@1x.webp") type("image/webp") 1x,
+        url("../../images/general/tablet/map-marker-tablet.png@2x.webp") type("image/webp") 2x,
+        url("../../images/general/tablet/map-marker-tablet.png@1x.png") type("image/png") 1x,
+        url("../../images/general/tablet/map-marker-tablet.png@2x.png") type("image/png") 2x);
+      top: 145px;
+      left: 43%;
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 129px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 

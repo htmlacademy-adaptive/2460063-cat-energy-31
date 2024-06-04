@@ -6,15 +6,26 @@
   color: $dark-grey;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  padding-left: 13px;
+  padding: 13px;
   margin-bottom: 16px;
   width: 280px;
   height: 56;
-  border: 1px solid $benefits-border;
+  border: 0;
+  outline: 2px solid $benefits-border;
+
+
+  &:hover {
+    border-radius: 0;
+    outline: 1px solid $benefits-border-hover;
+  }
 
   &:focus {
-    border-color: $dark-grey;
+    outline: 2px solid $dark-grey;
+    border-radius: 0;
+  }
+
+  &:required:user-invalid {
+    outline: 2px solid $form-error;
   }
 
 

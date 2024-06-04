@@ -14,17 +14,21 @@
   margin: 0 auto 20px;
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 174px;
     text-align: right;
     margin: 0;
     padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     text-align: left;
     padding: 0;
+    flex-direction: row;
+    gap: 63px;
   }
 }
 
@@ -37,15 +41,15 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-.example__price-text {
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-right: 63px;
+
+.example__price-sum {
+  @media (min-width: $tablet-width) {
+    align-self: flex-end;
   }
 }

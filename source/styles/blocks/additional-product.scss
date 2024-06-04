@@ -11,79 +11,27 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     padding: 0 30px;
-    position: relative;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    position: relative;
     margin-bottom: 96px;
     max-width: 1440px;
   }
 }
 
 .additional-product__subtitle {
-  font-size: 24px;
-  line-height: 24px;
   position: relative;
-  padding-bottom: 35px;
-  background-color: $color-white;
-  width: fit-content;
-  box-shadow: 40px 0 0 0 $color-white;
+  margin-bottom: 35px;
 
-  &::after {
-    content: " ";
-    width: 50vw;
-    height: 2px;
-    background-color: $green;
-    top: 12px;
-    left: 0;
-    position: absolute;
-    box-shadow: 50vw 0 0 0 $green;
-    z-index: -1;
-  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 79px 40px;
-    font-size: 32px;
-    line-height: 32px;
-    background-color: $color-white;
-    border: none;
-    box-shadow: 40px 0 0 0 $color-white;
-
-    &::after {
-      content: " ";
-      width: 50vw;
-      height: 2px;
-      background-color: $green;
-      top: 15px;
-      left: -30px;
-      position: absolute;
-      box-shadow: 50vw 0 0 0 $green;
-      z-index: -1;
-    }
+    margin-bottom: 80px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 79px;
-    font-size: 40px;
-    line-height: 40px;
-    width: fit-content;
-    box-shadow: -40px 0 0 0 $color-white, 40px 0 0 0 $color-white;
-
-    &::after {
-      content: " ";
-      width: 50vw;
-      height: 2px;
-      background-color: $green;
-      top: 18px;
-      left: -110px;
-      position: absolute;
-      box-shadow: 50vw 0 0 0 $green;
-      z-index: -1;
-    }
   }
 }
 
@@ -99,9 +47,8 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $border-catalog;
     margin-bottom: -1px;
-    padding: 26px 38px 28px;
+    padding: 26px 37px 27px;
   }
-
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -116,13 +63,18 @@
 }
 
 .additional-product__aside {
-  height: 290px;
-  background-image: linear-gradient($green-transparent, $green-transparent), url("../../images/catalog/mobile/aside-background.jpg");
+  min-height: 290px;
+  background-image:
+    linear-gradient($green-transparent, $green-transparent),
+    image-set( url("../../images/catalog/mobile/background-catalog-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/catalog/mobile/background-catalog-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/catalog/mobile/background-catalog-mobile@1x.png") type("image/png") 1x,
+    url("../../images/catalog/mobile/background-catalog-mobile@2x.png") type("image/png") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 40px;
-  margin-top: 34px;
+  margin-top: 36px;
+  margin-bottom: 39px;
   position: relative;
 
   &::after {
@@ -138,9 +90,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 200px;
-    margin-top: 68px;
-    margin-bottom: 80px;
+    min-height: 200px;
+    margin-top: 71px;
+    margin-bottom: 79px;
+    background-image:
+      linear-gradient($green-transparent, $green-transparent),
+      image-set( url("../../images/catalog/tablet/background-catalog-table@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/tablet/background-catalog-table@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/tablet/background-catalog-table@1x.png") type("image/png") 1x,
+      url("../../images/catalog/tablet/background-catalog-table@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
 
     &::after {
       top: 58px;
@@ -150,12 +112,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 288px;
+    min-height: 288px;
     width: 245px;
     position: absolute;
-    top: 119px;
+    top: 121px;
     right: 109px;
     margin: 0;
+    background-image:
+      linear-gradient($green-transparent, $green-transparent),
+      image-set( url("../../images/catalog/desktop/background-catalog-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/desktop/background-catalog-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/desktop/background-catalog-desktop@1x.png") type("image/png") 1x,
+      url("../../images/catalog/desktop/background-catalog-desktop@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &::after {
       top: 57px;
@@ -175,8 +146,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 125px 69px 421px;
     text-align: left;
+    margin: 0 124px 0 auto;
+    padding: 70px 0;
+    width: 161px;
   }
 
   @media (min-width: $desktop-width) {
