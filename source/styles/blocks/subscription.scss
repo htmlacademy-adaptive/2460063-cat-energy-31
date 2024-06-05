@@ -38,7 +38,7 @@
   color: $color_black;
   margin: 0;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -48,9 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-top: 72px;
-    margin-bottom: 24px;
+    margin: 72px 0 24px;
   }
 }
 
