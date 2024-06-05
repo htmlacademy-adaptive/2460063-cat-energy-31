@@ -6,39 +6,36 @@
   color: $dark-grey;
   box-sizing: border-box;
   margin: 0;
-  padding: 13px;
+  padding: 0 11px;
   margin-bottom: 16px;
   width: 280px;
   height: 56;
-  border: 0;
-  outline: 2px solid $benefits-border;
-
+  border: 2px solid $benefits-border;
 
   &:hover {
-    border-radius: 0;
+    border: 0;
     outline: 1px solid $benefits-border-hover;
   }
 
   &:focus {
+    border: 0;
     outline: 2px solid $dark-grey;
-    border-radius: 0;
   }
 
   &:required:user-invalid {
+    border: 0;
     outline: 2px solid $form-error;
   }
 
 
   @media (min-width: $tablet-width) {
-    width: 376px;
-    height: 56px;
     margin: 0;
+    width: 376px;
+    border-right: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 496px;
-    height: 56px;
-    margin: 0;
   }
 }
 
